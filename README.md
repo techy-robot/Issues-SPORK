@@ -1,2 +1,2 @@
 # Issues-SPORK
-Issues repo for hidden project. DO NOT ADD FILES HERE
+Issues repo for another project. DO NOT ADD FILES HERE, add them in the main repo
