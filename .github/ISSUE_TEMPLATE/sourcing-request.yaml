@@ -1,0 +1,42 @@
+name: Sourcing Request
+description: We need to order parts of some form
+title: "[SOURCING]: "
+labels: ["sourcing"]
+projects: ["techy-robot/1"]
+assignees:
+  - techy-robot
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this sourcing request!
+  - type: textarea
+    id: order-form
+    attributes:
+      label: What parts do you need?
+      description: Detail the parts you need, the cost, and the link
+      placeholder: "List your Parts!\n- Part A"
+      value: "- Part A"
+    validations:
+      required: true
+  - type: dropdown
+    id: sub-system
+    attributes:
+      label: Subsystem
+      description: What subsystem is this for?
+      multiple: true
+      options:
+        - Mechanical
+        - Electrical
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      description: By submitting this request, I agree this is a legitimate need and not a waste of money
+      options:
+        - label: This is a legitimate need and not a waste of money
+          required: true
+
